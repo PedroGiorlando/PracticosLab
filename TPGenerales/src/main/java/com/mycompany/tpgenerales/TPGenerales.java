@@ -18,6 +18,28 @@ public class TPGenerales {
         num2 = aux;
         System.out.println("Variable 1: "+ num1 + ", Variable 2: "+ num2);*/
         
+        /*Ejercicio 2
+        int num, cifras;
+        System.out.println("Ingrese un número para saber la cantidad de cifras que tiene");
+        num = sc.nextInt();
+        cifras = 0;
+        while(num!=0){
+            num = num/10;
+            cifras++;
+        }
+        System.out.println("Tiene "+cifras+" cifras");*/
+        
+        //Ejercicio 3
+        int temperatura;
+        String caracter;
+        
+        do{
+            System.out.println("Introduce la temperatura en C°: ");
+            temperatura = sc.nextInt();
+            System.out.println("Grados Kelvin: "+(temperatura+273));
+            System.out.println("Repetir proceso? (S/N)");
+            caracter = sc.nextLine();
+        }while(caracter == "s" || caracter == "S");
         
     }
 }
